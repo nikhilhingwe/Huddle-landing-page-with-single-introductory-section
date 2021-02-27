@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    background-color: var(--Violet);
+    height: 100vh;
+    width: auto;
+}
+
+li{
+    list-style: none;
+}
+
+/* ====================== HUDDLE =========================== */
+
+:root{
+--Violet: hsl(257, 40%, 49%);
+--SoftMagenta: hsl(300, 69%, 71%);
+}
+
+
+.huddle{
+    background: url(/images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0px 25px;
+}
+
+.header{
+    display: flex;
+    padding-top: 5vh;
+}
+
+.flex{
+    display: flex;
+    padding-top: 8vh;
+}
+
+.heading{
+    padding-top: 40px;
+    padding-left: 40px;
+   
+    color: #fff;
+
+}
+
+.heading h1{
+    font-size: 2.2rem;
+    line-height: 1.4;
+    font-family: 'Poppins', sans-serif;
+    white-space: nowrap;
+}
+
+.heading p{
+     padding-top: 30px;
+     font-size: 1.3rem;
+     line-height: 1.6;
+     font-family: 'Open Sans', sans-serif;
+     white-space: nowrap;
+
+}
+
+.heading button{
+    margin-top: 30px;
+    padding: 15px 63px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    color: var(--Violet);
+}
+
+.heading button:hover{
+    cursor: pointer;
+    background-color: var(--SoftMagenta);
+    color: #fff;
+}
+
+.social-media{
+    font-size: 1.7rem;
+    color: #fff; 
+    margin-top: 10px;
+}
+
+.social-media ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media li{
+    margin-left: 20px;
+    padding-top: 9px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: 1px solid #fff;     
+    border-radius: 60%;
+    cursor: pointer;
+}
+
+.social-media li :hover{
+   color: var(--SoftMagenta);
+}
+
+
+ /* ====================== MEDIA QUERIES =========================== */ 
+
+@media screen and (max-width:1224px){
+    .heading h1{
+        white-space: normal;
+        font-size: 1.8rem;
+    }
+
+    .heading p{
+       font-size: 0.9rem;
+       white-space: nowrap;
+    }
+
+}
+
+@media screen and (max-width:1024px){
+    .heading h1{
+        white-space: nowrap;
+        font-size: 1.6rem;
+    }
+
+    .heading p{
+       font-size: 0.8rem;
+       white-space: nowrap;
+    }
+
+}
+
+
+@media screen and (max-width:900px){
+
+    .heading{
+        padding-top: 20px;
+        padding-left: 40px;
+        color: #fff;
+    }
+    
+    .heading button{
+        margin-top: 30px;
+        margin-left: 0px;
+        padding: 10px 80px;
+        font-size: 15px;        
+    }
+    .social-media{
+       font-size: 1.5rem;
+       color: #fff; 
+       margin-top: 60px;
+    }
+
+   
+
+}
+
+
+
+@media screen and (max-width:768px){
+
+    .huddle{
+        background: url(/images/bg-mobile.svg);
+        background-size: cover;
+    }
+
+    .logo{
+        width: 50%;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .heading{
+        text-align: center;
+        position: relative;
+        left: -20px;
+    }
+
+    .heading h1{
+        white-space: normal;
+        font-size: 1.9rem;
+    }
+
+    .heading p{
+       font-size: 0.9rem;
+       white-space: normal;
+    }
+
+    .heading button{
+        margin-top: 30px;
+        margin-left: 20px;
+        padding: 10px 80px;
+        font-size: 15px;        
+    }
+
+    .social-media {
+        padding-top: 35px;
+        padding-bottom: 20px;
+        font-size: 1rem;
+    }
+
+    .social-media ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-media li{
+        margin-left: 8px;
+        padding-top: 6px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border: 1px solid #fff;     
+        border-radius: 60%;
+        cursor: pointer;
+    }  
+}
+
+@media screen and (max-width:500px){
+    .heading h1{
+        white-space: normal;
+        font-size: 1.5rem;
+    }
+
+    .heading p{
+       font-size: 0.7rem;
+       white-space: normal;
+    }
+
+}
+
+
+
+@media screen and (max-width:300px){
+    .heading button{
+        position: relative;
+        left: -25px;        
+    }
+
+}
+
+
+
+    
+
+  
+
+
